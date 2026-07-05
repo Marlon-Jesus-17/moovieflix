@@ -1,1 +1,16 @@
-spring.application.name=moovieflix
+spring:
+  application:
+    name: moovieflix
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/moovieflix
+    usarname: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgresSQLDialect
+    show-sql: true
+
+  flyway:
+    enabled: true
