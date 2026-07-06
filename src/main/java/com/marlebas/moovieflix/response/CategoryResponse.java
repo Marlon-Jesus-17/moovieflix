@@ -1,4 +1,7 @@
 package com.marlebas.moovieflix.response;
 
-public record CaregoryResponse(Long id, String name) {
+import lombok.Builder;
+
+@Builder
+public record CategoryResponse(Long id, String name) {
 }

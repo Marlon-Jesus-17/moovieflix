@@ -1,4 +1,4 @@
 package com.marlebas.moovieflix.request;
 
-public record CategoryRequest() {
+public record CategoryRequest(String name) {
 }
